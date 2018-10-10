@@ -11,12 +11,12 @@ public class HelloWorldTest {
     public void testSayHi() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         HelloWorld helloWorld = (HelloWorld) context.getBean("helloWorld");
-        System.out.println(helloWorld.sayHi("starlee"));
+        System.out.println(helloWorld.sayHi("zdw"));
     }
 
     @Test
     public void testSayHi2() {
         HelloWorld helloWorld = new HelloWorldImpl();
-        System.out.println(helloWorld.sayHi("starlee2"));
+        System.out.println(helloWorld.sayHi("zdw"));
     }
 }
